@@ -6,13 +6,17 @@ const db = low(adapter)
 db.defaults({ users: [] })
     .write()
 
-exports.setWowChar = (id, wowData) => {
+exports.addWowChar = (id, wowData) => {
     // check if user exists
     const user = db.get('users').find({ id })
-    if (user.value()) user.assign({ id, wowData }).write()
+    const uValue = user.value()
+    if (uValue)  {
+        uValue.characters.push(wowData)
+        user.assign(uValue).write()
+    }
     else {
         db.get('users')
-            .push({ id, wowData })
+            .push({ id, characters: [wowData] })
             .write()
     }
 }

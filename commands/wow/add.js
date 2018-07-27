@@ -10,10 +10,11 @@ exports.run = async (client, msg) => {
         const wowData =  await wow.getInfo(c[1], c[2])
         wowData.averageItemLevel = wowData.items.averageItemLevel
         delete wowData.items
-        db.setWowChar(id, wowData)
+        db.addWowChar(id, wowData)
         msg.reply('think it worked?')
     }
     catch(error) {
+        console.log(error)
         msg.reply(error)
     }
 }
@@ -30,7 +31,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: "set",
+    name: "add",
     description: "Sets wow character: RealmName CharacterName",
     usage: "",
     usageDelim: "",
