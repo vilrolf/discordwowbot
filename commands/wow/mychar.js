@@ -2,7 +2,7 @@
 const db = require('../../db.js')
 exports.run = async(client, msg) => {
   const id = msg.author.id
-  const wowData =  db.getWowChar(id)
+  const wowData =  db.getWowCharecters(id)
   const r = "Name: " + wowData.name + " \n" 
    + "Realm: " + wowData.realm + " \n"
    + "ItemLvl: " + wowData.averageItemLevel + " \n"

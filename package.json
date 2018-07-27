@@ -9,6 +9,7 @@
     "komada": "^0.21.1",
     "lodash": "^4.17.10",
     "lowdb": "^1.0.0",
+    "markdown-table": "^1.1.2",
     "typescript": "^2.9.2"
   },
   "devDependencies": {},

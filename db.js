@@ -20,9 +20,9 @@ exports.addWowChar = (id, wowData) => {
             .write()
     }
 }
-exports.getWowChar = (id) => {
+exports.getWowCharacters = (id) => {
     const data = db.get('users').find({ id }).value()
-    if (data) return data.wowData
+    if (data) return data.characters
     return null
 }
 
