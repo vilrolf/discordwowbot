@@ -2,8 +2,8 @@
 const db = require('../../db.js')
 const mTable = require('markdown-table')
 exports.run = async (client, msg) => {
-    const id = msg.author.id
-    const characters = db.getWowCharacters(id)
+    const id = msg.member.id
+    const characters = db.getWowCharactersFromUser(id)
     const outArray = [['Name', 'Realm', 'Level', 'Average Item Level', 'Achievement Points', 'Honorable Kills']]
     characters.map((c) => {
         outArray.push([
@@ -37,7 +37,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: "chars",
+    name: "mychars",
     description: "Gets data from your character",
     usage: "",
     usageDelim: "",

@@ -3,30 +3,28 @@ const FileSync = require('lowdb/adapters/FileSync')
 
 const adapter = new FileSync('db.json')
 const db = low(adapter)
-db.defaults({ users: [] })
+db.defaults({ characters: [], users: [] })
     .write()
 
 exports.addWowChar = (id, wowData) => {
-    // check if user exists
-    const user = db.get('users').find({ id })
-    const uValue = user.value()
-    if (uValue)  {
-        uValue.characters.push(wowData)
-        user.assign(uValue).write()
-    }
-    else {
-        db.get('users')
-            .push({ id, characters: [wowData] })
-            .write()
-    }
+    const exists = db.get('characters').find({ name: wowData.name, realm: wowData.realm }).value()
+    if (exists) return false
+    const char = {...wowData, memberId: id} 
+    db.get('characters')
+        .push( char)
+        .write()
+    return char
 }
-exports.getWowCharacters = (id) => {
-    const data = db.get('users').find({ id }).value()
-    if (data) return data.characters
+exports.getWowCharactersFromUser = (id) => {
+    const data = db.get('characters').filter({ memberId: id }).value()
+    console.log('dat', data)
+    if (data) return data
     return null
 }
 
 exports.getAllChars = (sortBy) => {
-    
-    return db.get('users').map('wowData').sortBy(sortBy).value()
+    return db.get('characters').sortBy(sortBy).value()
+}
+exports.getAllUsers = () => {
+    return db.get('users').value()
 }

@@ -1,13 +1,8 @@
 //!ilvl turalyon snitrus
 const db = require('../../db.js')
-exports.run = async(client, msg) => {
-    const users =  db.getAllChars('averageItemLevel')
-    let totalItemLevel = 0
-    for(i in users) {
-        totalItemLevel += users[i].averageItemLevel
-    }
-    const avgItemLvl = totalItemLevel / users.length
-    msg.reply('avgItemLvl: ' + avgItemLvl)
+exports.run = async (client, msg) => {
+  const users = db.getAllChars('averageItemLevel')
+  msg.reply('avgItemLvl: ' + avgItemLvl)
 }
 
 exports.conf = {

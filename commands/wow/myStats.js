@@ -3,8 +3,8 @@ const db = require('../../db.js')
 const mTable = require('markdown-table')
 const _ = require('lodash')
 exports.run = async (client, msg) => {
-    const id = msg.author.id
-    const characters = db.getWowCharacters(id)
+    const id = msg.member.id
+    const characters = db.getWowCharactersFromUser(id)
 
     let highestItemLvl = 0
     let highestItemLvlChar = null
