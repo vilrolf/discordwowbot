@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "id": "121671602562662400",
+      "wowData": {
+        "lastModified": 1532641647000,
+        "name": "Snitrus",
+        "realm": "Turalyon",
+        "battlegroup": "Embuscade / Hinterhalt",
+        "class": 7,
+        "race": 25,
+        "gender": 0,
+        "level": 110,
+        "achievementPoints": 6640,
+        "thumbnail": "turalyon/103/80838503-avatar.jpg",
+        "calcClass": "W",
+        "faction": 0,
+        "pvp": {
+          "brackets": {
+            "ARENA_BRACKET_2v2": {
+              "slug": "2v2",
+              "rating": 670,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 11,
+              "seasonWon": 7,
+              "seasonLost": 4
+            },
+            "ARENA_BRACKET_3v3": {
+              "slug": "3v3",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "ARENA_BRACKET_RBG": {
+              "slug": "rbg",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "ARENA_BRACKET_2v2_SKIRMISH": {
+              "slug": "2v2s",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "UNKNOWN": {
+              "slug": "unknown",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            }
+          }
+        },
+        "totalHonorableKills": 49078,
+        "averageItemLevel": 182
+      }
+    },
+    {
+      "id": "196739127264149505",
+      "wowData": {
+        "lastModified": 1532644111000,
+        "name": "Yewhatever",
+        "realm": "Silvermoon",
+        "battlegroup": "Misery",
+        "class": 2,
+        "race": 1,
+        "gender": 0,
+        "level": 110,
+        "achievementPoints": 10885,
+        "thumbnail": "silvermoon/77/109173581-avatar.jpg",
+        "calcClass": "b",
+        "faction": 0,
+        "pvp": {
+          "brackets": {
+            "ARENA_BRACKET_2v2": {
+              "slug": "2v2",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "ARENA_BRACKET_3v3": {
+              "slug": "3v3",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "ARENA_BRACKET_RBG": {
+              "slug": "rbg",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "ARENA_BRACKET_2v2_SKIRMISH": {
+              "slug": "2v2s",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            },
+            "UNKNOWN": {
+              "slug": "unknown",
+              "rating": 0,
+              "weeklyPlayed": 0,
+              "weeklyWon": 0,
+              "weeklyLost": 0,
+              "seasonPlayed": 0,
+              "seasonWon": 0,
+              "seasonLost": 0
+            }
+          }
+        },
+        "totalHonorableKills": 3808,
+        "averageItemLevel": 191
+      }
+    }
+  ]
+}

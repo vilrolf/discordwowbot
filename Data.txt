@@ -1,0 +1,313 @@
+﻿hopp til innhold
+MY SUBREDDITS
+-DASHBOARD-FRONT-ALL-RANDOM-EDIT|
+add shortcuts from the my subreddits menu at left or click the button by the subreddit name, drag and drop to sort
+↑↓><
+reddit.com discordapp
+KOMMENTARERSHOW IMAGES
+»Want to join? Log in or sign up in seconds.|Norsk|
+
+hopp til innhold
+MY SUBREDDITS
+-DASHBOARD-FRONT-ALL-RANDOM-EDIT|
+add shortcuts from the my subreddits menu at left or click the button by the subreddit name, drag and drop to sort
+↑↓><
+reddit.com discordapp
+KOMMENTARERSHOW IMAGES
+»Want to join? Log in or sign up in seconds.|Norsk|
+
+
+Denne posten ble lagt til på 25 Aug 2016
+3 poeng (100 % oppstemt)
+3 votes
+shortlink:  
+https://redd.it/4zlo4l
+
+brukernavn
+
+•••••••••
+husk megtilbakestill passordLOGG INN
+
+post en ny lenke
+post en ny tekstpost
+discordapp
+Use subreddit style
+Abonner
++SHORTCUT+DASHBOARD
+17 951 139
+OPEN DISCORD
+
+Got feature suggestions? Help us prioritize them here!
+
+Wanna rep Discord? Apply to join the Discord Hypesquad!
+
+Add your Discord Tag to your flair!
+
+SUBREDDIT RULES
+
+
+send melding til moderatorene
+MODERATORER
+jewbacabra Zencha
+Cilantrelle Cilantrelle#5088
+Gizoogle Gizoogle#6214
+Flam9 
+ReallyAmused Jake#0001
+Lutin Lutin#0387
+Jofzar_ Not a devloper just a mod
+b1naryth1ef b1nzy#1337
+discord_bot Official Discord Reddit Bot
+DiscordDan 
+… og 6 til »
+3
+Sending a file without the URL? (Discord.js) self.discordapp
+Sendt inn 2 måneder siden av MangledandWindinAway
+I'm making a custom bot for a Five Nights at Freddy's Discord (oh, the horror!) and I'm looking to create a command, although I am very, very new to this. I'm trying to code a command that will return whatever image is currently here. I am aware that you can send files, although I am wondering if there is a way for a bot to produce whatever image is currently on the page at all times. Can anyone help?
+5 kommentarerdelhide all child comments
+alle 5 kommentarer subscribe
+sorter etter: beste
+navigate by:submittermoderatorfriendmeadminhighlightedtaggedgildedIAmAimagesvideospopularnew
+[–]candeles  1 poeng 2 måneder siden 
+Well the bot would presumably be sending messages constantly, just editing the same one over and over again, or by sending the new one and deleting the last message. All of which are doable, I suppose. Do you want to have the file change when the file changes on that webpage?
+Also the function for sending files is:
+Client.sendFile(channel, attachment, name, content)
+Where name and content are both optional strings.
+permalenkeembed
+[–]MangledandWindinAway [S] 1 poeng 2 måneder siden 
+sending files is relatively simple. I just want to send whatever image is currently here, which is difficult considering i would need the bot to scan the page and find the image that is currently on it. the image on the site changes rather frequently, so i would rather not have to edit the code of the bot every single time something new shows up.
+permalenkeembedforeldre
+[–]candeles  1 poeng 2 måneder siden 
+So, understanding that I haven't used every package under the sun, I can still bet there's a package for this. Assuming you're new to coding, or at least coding in JavaScript, I'll try to be specific.
+I haven't been able to load the page, but effectively what you want to do is find the image based on the div id, aka the id of the box on the page that contains the image. This will let you continually check the same place, and if the image name changes, you'll be fine. If they redo the style of the page that may throw things off, which is understandable.
+I'd recommend checking the page at intervals to see if it changes, say every 10 minutes or an hour.
+permalenkeembedforeldre
+[–]MangledandWindinAway [S] 1 poeng 2 måneder siden 
+ah, understandable. How exactly to i take the div ID, and how to i have it appear in chat?
+permalenkeembedforeldre
+[–]candeles  1 poeng 2 måneder siden 
+Well you want to get the link to the actual image every time, so you're gonna have to put together a few things. Check out cheerio. I believe it does what you need, however I haven't used it and can't help there.
+To get it to appear in chat you just need to send the file! Something like Bot.sendFile(Bot.servers[0].channels[0], var_that_contains_link, "Spooky Pic", "Guys this gave me a frighten");
+For more help you might want to check out the discord.js discord channel.
+permalenkeembedforeldre
+om
+blogg
+about
+kildekode
+reklamer
+jobber
+hjelp
+sidens regler
+FAQ
+wiki
+reddikette
+gjennomsiktighet
+kontakt oss
+apper & værktøy
+Reddit for iPhone
+Reddit for Android
+mobile website
+knapper
+<3
+reddit gold
+redditgaver
+Ved bruk av denne siden aksepterer du vår Brukeravtale{Genitive} og Privacy Policy (updated). © 2016 reddit inc. Alle rettigheter forbeholdt.
+REDDIT and the ALIEN Logo are registered trademarks of reddit inc.hopp til innhold
+MY SUBREDDITS
+-DASHBOARD-FRONT-ALL-RANDOM-EDIT|
+add shortcuts from the my subreddits menu at left or click the button by the subreddit name, drag and drop to sort
+↑↓><
+reddit.com discordapp
+KOMMENTARERSHOW IMAGES
+»Want to join? Log in or sign up in seconds.|Norsk|
+
+
+Denne posten ble lagt til på 25 Aug 2016
+3 poeng (100 % oppstemt)
+3 votes
+shortlink:  
+https://redd.it/4zlo4l
+
+brukernavn
+
+•••••••••
+husk megtilbakestill passordLOGG INN
+
+post en ny lenke
+post en ny tekstpost
+discordapp
+Use subreddit style
+Abonner
++SHORTCUT+DASHBOARD
+17 951 139
+OPEN DISCORD
+
+Got feature suggestions? Help us prioritize them here!
+
+Wanna rep Discord? Apply to join the Discord Hypesquad!
+
+Add your Discord Tag to your flair!
+
+SUBREDDIT RULES
+
+
+send melding til moderatorene
+MODERATORER
+jewbacabra Zencha
+Cilantrelle Cilantrelle#5088
+Gizoogle Gizoogle#6214
+Flam9 
+ReallyAmused Jake#0001
+Lutin Lutin#0387
+Jofzar_ Not a devloper just a mod
+b1naryth1ef b1nzy#1337
+discord_bot Official Discord Reddit Bot
+DiscordDan 
+… og 6 til »
+3
+Sending a file without the URL? (Discord.js) self.discordapp
+Sendt inn 2 måneder siden av MangledandWindinAway
+I'm making a custom bot for a Five Nights at Freddy's Discord (oh, the horror!) and I'm looking to create a command, although I am very, very new to this. I'm trying to code a command that will return whatever image is currently here. I am aware that you can send files, although I am wondering if there is a way for a bot to produce whatever image is currently on the page at all times. Can anyone help?
+5 kommentarerdelhide all child comments
+alle 5 kommentarer subscribe
+sorter etter: beste
+navigate by:submittermoderatorfriendmeadminhighlightedtaggedgildedIAmAimagesvideospopularnew
+[–]candeles  1 poeng 2 måneder siden 
+Well the bot would presumably be sending messages constantly, just editing the same one over and over again, or by sending the new one and deleting the last message. All of which are doable, I suppose. Do you want to have the file change when the file changes on that webpage?
+Also the function for sending files is:
+Client.sendFile(channel, attachment, name, content)
+Where name and content are both optional strings.
+permalenkeembed
+[–]MangledandWindinAway [S] 1 poeng 2 måneder siden 
+sending files is relatively simple. I just want to send whatever image is currently here, which is difficult considering i would need the bot to scan the page and find the image that is currently on it. the image on the site changes rather frequently, so i would rather not have to edit the code of the bot every single time something new shows up.
+permalenkeembedforeldre
+[–]candeles  1 poeng 2 måneder siden 
+So, understanding that I haven't used every package under the sun, I can still bet there's a package for this. Assuming you're new to coding, or at least coding in JavaScript, I'll try to be specific.
+I haven't been able to load the page, but effectively what you want to do is find the image based on the div id, aka the id of the box on the page that contains the image. This will let you continually check the same place, and if the image name changes, you'll be fine. If they redo the style of the page that may throw things off, which is understandable.
+I'd recommend checking the page at intervals to see if it changes, say every 10 minutes or an hour.
+permalenkeembedforeldre
+[–]MangledandWindinAway [S] 1 poeng 2 måneder siden 
+ah, understandable. How exactly to i take the div ID, and how to i have it appear in chat?
+permalenkeembedforeldre
+[–]candeles  1 poeng 2 måneder siden 
+Well you want to get the link to the actual image every time, so you're gonna have to put together a few things. Check out cheerio. I believe it does what you need, however I haven't used it and can't help there.
+To get it to appear in chat you just need to send the file! Something like Bot.sendFile(Bot.servers[0].channels[0], var_that_contains_link, "Spooky Pic", "Guys this gave me a frighten");
+For more help you might want to check out the discord.js discord channel.
+permalenkeembedforeldre
+om
+blogg
+about
+kildekode
+reklamer
+jobber
+hjelp
+sidens regler
+FAQ
+wiki
+reddikette
+gjennomsiktighet
+kontakt oss
+apper & værktøy
+Reddit for iPhone
+Reddit for Android
+mobile website
+knapper
+<3
+reddit gold
+redditgaver
+Ved bruk av denne siden aksepterer du vår Brukeravtale{Genitive} og Privacy Policy (updated). © 2016 reddit inc. Alle rettigheter forbeholdt.
+REDDIT and the ALIEN Logo are registered trademarks of reddit inc.
+Denne posten ble lagt til på 25 Aug 2016
+3 poeng (100 % oppstemt)
+3 votes
+shortlink:  
+https://redd.it/4zlo4l
+
+brukernavn
+
+•••••••••
+husk megtilbakestill passordLOGG INN
+
+post en ny lenke
+post en ny tekstpost
+discordapp
+Use subreddit style
+Abonner
++SHORTCUT+DASHBOARD
+17 951 139
+OPEN DISCORD
+
+Got feature suggestions? Help us prioritize them here!
+
+Wanna rep Discord? Apply to join the Discord Hypesquad!
+
+Add your Discord Tag to your flair!
+
+SUBREDDIT RULES
+
+
+send melding til moderatorene
+MODERATORER
+jewbacabra Zencha
+Cilantrelle Cilantrelle#5088
+Gizoogle Gizoogle#6214
+Flam9 
+ReallyAmused Jake#0001
+Lutin Lutin#0387
+Jofzar_ Not a devloper just a mod
+b1naryth1ef b1nzy#1337
+discord_bot Official Discord Reddit Bot
+DiscordDan 
+… og 6 til »
+3
+Sending a file without the URL? (Discord.js) self.discordapp
+Sendt inn 2 måneder siden av MangledandWindinAway
+I'm making a custom bot for a Five Nights at Freddy's Discord (oh, the horror!) and I'm looking to create a command, although I am very, very new to this. I'm trying to code a command that will return whatever image is currently here. I am aware that you can send files, although I am wondering if there is a way for a bot to produce whatever image is currently on the page at all times. Can anyone help?
+5 kommentarerdelhide all child comments
+alle 5 kommentarer subscribe
+sorter etter: beste
+navigate by:submittermoderatorfriendmeadminhighlightedtaggedgildedIAmAimagesvideospopularnew
+[–]candeles  1 poeng 2 måneder siden 
+Well the bot would presumably be sending messages constantly, just editing the same one over and over again, or by sending the new one and deleting the last message. All of which are doable, I suppose. Do you want to have the file change when the file changes on that webpage?
+Also the function for sending files is:
+Client.sendFile(channel, attachment, name, content)
+Where name and content are both optional strings.
+permalenkeembed
+[–]MangledandWindinAway [S] 1 poeng 2 måneder siden 
+sending files is relatively simple. I just want to send whatever image is currently here, which is difficult considering i would need the bot to scan the page and find the image that is currently on it. the image on the site changes rather frequently, so i would rather not have to edit the code of the bot every single time something new shows up.
+permalenkeembedforeldre
+[–]candeles  1 poeng 2 måneder siden 
+So, understanding that I haven't used every package under the sun, I can still bet there's a package for this. Assuming you're new to coding, or at least coding in JavaScript, I'll try to be specific.
+I haven't been able to load the page, but effectively what you want to do is find the image based on the div id, aka the id of the box on the page that contains the image. This will let you continually check the same place, and if the image name changes, you'll be fine. If they redo the style of the page that may throw things off, which is understandable.
+I'd recommend checking the page at intervals to see if it changes, say every 10 minutes or an hour.
+permalenkeembedforeldre
+[–]MangledandWindinAway [S] 1 poeng 2 måneder siden 
+ah, understandable. How exactly to i take the div ID, and how to i have it appear in chat?
+permalenkeembedforeldre
+[–]candeles  1 poeng 2 måneder siden 
+Well you want to get the link to the actual image every time, so you're gonna have to put together a few things. Check out cheerio. I believe it does what you need, however I haven't used it and can't help there.
+To get it to appear in chat you just need to send the file! Something like Bot.sendFile(Bot.servers[0].channels[0], var_that_contains_link, "Spooky Pic", "Guys this gave me a frighten");
+For more help you might want to check out the discord.js discord channel.
+permalenkeembedforeldre
+om
+blogg
+about
+kildekode
+reklamer
+jobber
+hjelp
+sidens regler
+FAQ
+wiki
+reddikette
+gjennomsiktighet
+kontakt oss
+apper & værktøy
+Reddit for iPhone
+Reddit for Android
+mobile website
+knapper
+<3
+reddit gold
+redditgaver
+Ved bruk av denne siden aksepterer du vår Brukeravtale{Genitive} og Privacy Policy (updated). © 2016 reddit inc. Alle rettigheter forbeholdt.
+REDDIT and the ALIEN Logo are registered trademarks of reddit inc.
