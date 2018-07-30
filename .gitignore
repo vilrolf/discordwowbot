@@ -1,3 +1,5 @@
 node_modules
 app.bat
 db.json
+start.sh
+update.sh
