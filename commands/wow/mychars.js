@@ -15,10 +15,8 @@ exports.run = async (client, msg) => {
             c.totalHonorableKills,
         ])
     })
-    console.log(outArray)
     const table = mTable(outArray) //  {align: 'c'}
 
-    console.log(table)
     msg.reply('Your characters: ' +
         ' ```'   +
         table
