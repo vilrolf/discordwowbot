@@ -2,18 +2,13 @@
 const db = require('../../db.js')
 const mTable = require('markdown-table')
 exports.run = async (client, msg) => {
-    const id = msg.member.id
-    const users = db.getAllChars(id)
+    const characters = db.getAllChars(['averageItemLevel', 'level']).reverse()
     const outArray = [['User', 'Name', 'Realm', 'Level', 'Average Item Level', 'Achievement Points', 'Honorable Kills']]
-    for(i in users) {
-        const u = users[i]
-        for(j in users.characters){
-            const user = await client.fetchUser(u.id)
-
-        }
-    }
+    const guild = msg.channel.guild
     characters.map((c) => {
+        const member = guild.members.get(c.memberId)
         outArray.push([
+            member.displayName,
             c.name,
             c.realm,
             c.level,
@@ -22,12 +17,10 @@ exports.run = async (client, msg) => {
             c.totalHonorableKills,
         ])
     })
-    console.log(outArray)
-    const table = mTable(outArray) //  {align: 'c'}
+    const table = mTable(outArray)
 
-    console.log(table)
     msg.reply('Your characters: ' +
-        ' ```'   +
+        ' ```' +
         table
         + '``` ')
 }
@@ -44,7 +37,7 @@ exports.conf = {
 };
 
 exports.help = {
-    name: "chars",
+    name: "allchars",
     description: "Gets data from your character",
     usage: "",
     usageDelim: "",
