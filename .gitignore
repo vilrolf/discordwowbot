@@ -3,3 +3,4 @@ app.bat
 db.json
 start.sh
 update.sh
+docker-compose.yml
