@@ -3,7 +3,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 
 const adapter = new FileSync('db.json')
 const db = low(adapter)
-db.defaults({ characters: [], users: [] })
+db.defaults({ characters: [], members: [] })
     .write()
 
 exports.addWowChar = (id, wowData) => {
@@ -20,6 +20,12 @@ exports.getWowCharactersFromUser = (id) => {
     console.log('dat', data)
     if (data) return data
     return null
+}
+exports.addUser = (member) => {
+    const memberFromDb =  db.get('members').find({id: member.id}).value()
+    if(!memberFromDb) {
+        db.get('members').push(member).write()
+    } 
 }
 
 exports.getAllChars = (sortBy) => {

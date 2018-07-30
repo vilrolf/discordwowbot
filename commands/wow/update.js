@@ -3,8 +3,6 @@ const wow = require('../../wow.js')
 const charEmbed = require('../../util/charEmbed.js')
 exports.run = async (client, msg) => {
     const id = msg.member.id
-    const c = msg.content.split(' ')
-    // trying to get wow data
     try {
         const wowData = await wow.getInfo(c[1], c[2])
         wowData.averageItemLevel = wowData.items.averageItemLevel
@@ -34,8 +32,8 @@ exports.conf = {
 };
 
 exports.help = {
-    name: "add",
-    description: "Sets wow character: RealmName CharacterName",
+    name: "update",
+    description: "Updates all your characters from armory",
     usage: "",
     usageDelim: "",
     type: "commands",
