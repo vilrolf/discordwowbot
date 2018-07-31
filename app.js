@@ -1,3 +1,4 @@
+const crons = require('./cron/all')
 const komada = require("komada");
 const client = new komada.Client({
   // ownerID : "your-user-id",
@@ -8,3 +9,4 @@ const client = new komada.Client({
   cmdLogging: true,
 });
 client.login(process.env.botToken);
+crons.runCrons()
