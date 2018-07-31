@@ -3,7 +3,7 @@ const { promisify } = require('util')
 const { getAllChars } = require('./db.js')
 const { getBestPvpRating } = require('./util/charUtil')
 const moment = require('moment')
-
+// test
 var doc = new GoogleSpreadsheet(process.env.sheetId);
 
 exports.write = async () => {
@@ -23,7 +23,7 @@ exports.write = async () => {
       itemLvlData[h] = c.averageItemLevel
       pvpData[h] = getBestPvpRating(c)
     }
-   
+    
     var private_value = process.env.sheetPrivateKey.replace(/\\n/g, '\n');    
     var creds = {
       "private_key": private_value,
