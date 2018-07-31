@@ -51,5 +51,5 @@ exports.write = async () => {
     console.log(error)
   }
 }
-exports.write()
+// exports.write()
 
