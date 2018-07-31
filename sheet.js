@@ -29,7 +29,6 @@ exports.write = async () => {
       "private_key": private_value,
       "client_email": process.env.sheetClientEmail,
     }
-    console.log(creds.private_key.length)
 
     await promisify(doc.useServiceAccountAuth)(creds)
     const info = await promisify(doc.getInfo)()
@@ -52,5 +51,5 @@ exports.write = async () => {
     console.log(error)
   }
 }
-// exports.write()
+exports.write()
 
