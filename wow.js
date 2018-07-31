@@ -11,9 +11,14 @@ exports.getAvgItemLvl = async (realm, charName) => {
 
 exports.getInfo = async (realm, charName) => {
     const result = await axios.get('https://eu.api.battle.net/wow/character/' + realm + '/' + charName + '?fields=items+pvp&locale=en_GB&apikey=' + wowKey)
-    return result.data
+    const wowData = result.data
+    wowData.averageItemLevel = wowData.items.averageItemLevel
+    delete wowData.items
+    return wowData
 }
 
-exports.updateCharacter = async (realm, charName) => {
-    const newData = await exports.getInfo(real, charName)
+exports.updateCharacter = async (c) => {
+
+    const newData = await exports.getInfo(c.realm, c.name)
+
 }

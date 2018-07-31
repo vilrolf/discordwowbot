@@ -27,7 +27,6 @@ exports.addUser = (member) => {
         db.get('members').push(member).write()
     } 
 }
-
 exports.getAllChars = (sortBy) => {
     return db.get('characters').sortBy(sortBy).value()
 }

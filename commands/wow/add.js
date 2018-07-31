@@ -7,8 +7,6 @@ exports.run = async (client, msg) => {
     // trying to get wow data
     try {
         const wowData = await wow.getInfo(c[1], c[2])
-        wowData.averageItemLevel = wowData.items.averageItemLevel
-        delete wowData.items
         if (db.addWowChar(id, wowData)) {
             const embed =  charEmbed.createEmbedMessageFromChar(wowData)
             msg.channel.send({embed});
