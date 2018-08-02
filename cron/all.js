@@ -1,5 +1,6 @@
 var cron = require('node-cron');
 var sheet = require('../sheet')
+var db = require('../db')
 
 const write30Min = () => {
     cron.schedule('0,30 15-23 * * *', () => {
@@ -16,7 +17,7 @@ const everHourAtNight = () => {
 }
 const updateChars = () => {
     cron.schedule('25,55 * * * *', () => {
-        sheet.write()
+        db.updateAllCharacters()
     })
 }
 // const everyMinute = () => {

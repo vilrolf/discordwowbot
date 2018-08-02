@@ -35,7 +35,7 @@ exports.getAllUsers = () => {
     return db.get('users').value()
 }
 
-exports.updateAllUsers = async () => {
+exports.updateAllCharacters = async () => {
     const chars = db.get('characters').value()
     for(i in chars){
         const old = chars[i]

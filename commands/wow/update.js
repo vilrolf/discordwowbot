@@ -2,7 +2,7 @@ const db = require('../../db.js')
 const wow = require('../../wow.js')
 const charEmbed = require('../../util/charEmbed.js')
 exports.run = async (client, msg) => {
-   db.updateAllUsers()
+   db.updateAllCharacters()
 
 }
 
