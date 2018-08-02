@@ -2,7 +2,7 @@ var GoogleSpreadsheet = require('google-spreadsheet');
 const { promisify } = require('util')
 const { getAllChars } = require('./db.js')
 const { getBestPvpRating } = require('./util/charUtil')
-const moment = require('moment')
+const moment = require('moment-timezone')
 // test
 var doc = new GoogleSpreadsheet(process.env.sheetId);
 
@@ -10,7 +10,7 @@ exports.write = async () => {
   try {
     const characters = getAllChars()
     const headers = ['time']
-    const time = moment().format('DD.MM.YYYY HH.mm.ss')
+    const time = moment().tz('Europe/Oslo').format('DD.MM.YYYY HH.mm.ss')
     const levelData = { time }
     const itemLvlData = { time }
     const pvpData = { time }

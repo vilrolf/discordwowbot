@@ -13,6 +13,7 @@
     "lowdb": "^1.0.0",
     "markdown-table": "^1.1.2",
     "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
     "node-cron": "^1.2.1",
     "typescript": "^2.9.2"
   },
