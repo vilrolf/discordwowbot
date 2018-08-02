@@ -5,14 +5,19 @@ const write30Min = () => {
     cron.schedule('0,30 15-23 * * *', () => {
         sheet.write()
     })
-    cron.schedule('0 3-14 * * *', () => {
+    cron.schedule('0 0-3 * * *', () => {
         sheet.write()
     })
 }
 const everHourAtNight = () => {
-    cron.schedule('0 0-13 * * *', () => {
+    cron.schedule('0 3-14 * * *', () => {
         sheet.write()
     } )
+}
+const updateChars = () => {
+    cron.schedule('25,55 * * * *', () => {
+        sheet.write()
+    })
 }
 // const everyMinute = () => {
 //     cron.schedule('* * * * *', () => {
@@ -23,6 +28,7 @@ const everHourAtNight = () => {
 exports.runCrons = () => {
     write30Min()
     everHourAtNight()
+    updateChars()
     // everyMinute()
 }
 
