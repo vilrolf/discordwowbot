@@ -18,7 +18,5 @@ exports.getInfo = async (realm, charName) => {
 }
 
 exports.updateCharacter = async (c) => {
-
-    const newData = await exports.getInfo(c.realm, c.name)
-
+  return await exports.getInfo(c.realm, c.name)
 }

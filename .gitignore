@@ -4,3 +4,4 @@ db.json
 start.sh
 update.sh
 docker-compose.yml
+testing.bat

@@ -1,5 +1,6 @@
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
+const wow = require('./wow.js')
 
 const adapter = new FileSync('./data/db.json')
 const db = low(adapter)
@@ -32,4 +33,13 @@ exports.getAllChars = (sortBy) => {
 }
 exports.getAllUsers = () => {
     return db.get('users').value()
+}
+
+exports.updateAllUsers = async () => {
+    const chars = db.get('characters').value()
+    for(i in chars){
+        const old = chars[i]
+        const newChar = await wow.updateCharacter(old)
+        db.get('characters').find(old).assign(newChar).write()
+    }
 }
