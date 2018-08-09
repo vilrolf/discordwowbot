@@ -18,7 +18,6 @@ exports.addWowChar = (id, wowData) => {
 }
 exports.getWowCharactersFromUser = (id) => {
     const data = db.get('characters').filter({ memberId: id }).value()
-    console.log('dat', data)
     if (data) return data
     return null
 }

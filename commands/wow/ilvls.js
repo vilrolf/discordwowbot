@@ -1,8 +1,22 @@
 //!ilvl turalyon snitrus
 const db = require('../../db.js')
 exports.run = async (client, msg) => {
-  const users = db.getAllChars('averageItemLevel')
-  msg.reply('avgItemLvl: ' + avgItemLvl)
+  const users = db.getAllChars('averageItemLevel').reverse()
+  const outArray = [[ 'Name', 'Realm', 'Average Item Level',]]
+  characters.map((c) => {
+      outArray.push([
+          c.name,
+          c.realm,
+          c.level,
+          c.averageItemLevel,
+      ])
+  })
+  const table = mTable(outArray)
+
+  msg.reply('Sorted by ilvls: ' +
+      ' ```' +
+      table
+      + '``` ')
 }
 
 exports.conf = {

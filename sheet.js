@@ -4,10 +4,10 @@ const { getAllChars } = require('./db.js')
 const { getBestPvpRating } = require('./util/charUtil')
 const moment = require('moment-timezone')
 // test
-var doc = new GoogleSpreadsheet(process.env.sheetId);
 
 exports.write = async () => {
   try {
+    var doc = new GoogleSpreadsheet(process.env.sheetId);
     const characters = getAllChars()
     const headers = ['time']
     const time = moment().tz('Europe/Oslo').format('DD.MM.YYYY HH.mm.ss')

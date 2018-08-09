@@ -15,7 +15,6 @@ exports.run = async (client, msg) => {
     }
     catch (error) {
         if (error.status === 404) msg.reply('Can not find character')
-        console.log(error)
         msg.reply(error)
     }
 }

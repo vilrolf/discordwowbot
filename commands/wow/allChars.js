@@ -2,7 +2,9 @@
 const db = require('../../db.js')
 const mTable = require('markdown-table')
 exports.run = async (client, msg) => {
-    const characters = db.getAllChars(['averageItemLevel', 'level']).reverse()
+    //!ilvl 
+    const sortBy = msg.content.split(' ')[1]
+    const characters = db.getAllChars([sortBy, 'level']).reverse()
     const outArray = [['User', 'Name', 'Realm', 'Level', 'Average Item Level', 'Achievement Points', 'Honorable Kills']]
     const guild = msg.channel.guild
     characters.map((c) => {

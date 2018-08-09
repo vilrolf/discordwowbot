@@ -24,10 +24,8 @@ exports.run = async (client, msg) => {
         ['Highest itemLvL', 'Total honorable kills', 'Average itemLvL', 'Achievement Points'],
         [highestItemLvlChar.name + ':' + highestItemLvl, totalKills, avgItemLvl, characters[0].achievementPoints]
     ]
-    console.log(outArray)
     const table = mTable(outArray) //  {align: 'c'}
 
-    console.log(table)
     msg.reply('Your stats: ' +
         ' ```' +
         table
