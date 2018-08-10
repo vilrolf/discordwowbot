@@ -1,9 +1,10 @@
 //!ilvl turalyon snitrus
 const db = require('../../db.js')
+const mTable = require('markdown-table')
 exports.run = async (client, msg) => {
   const users = db.getAllChars('averageItemLevel').reverse()
   const outArray = [[ 'Name', 'Realm', 'Average Item Level',]]
-  characters.map((c) => {
+  users.map((c) => {
       outArray.push([
           c.name,
           c.realm,
