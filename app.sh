@@ -1,1 +1,0 @@
-TEST="test" node app.js 

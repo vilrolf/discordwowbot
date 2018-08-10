@@ -1,7 +1,9 @@
 node_modules
 app.bat
+app.sh
 db.json
 start.sh
 update.sh
 docker-compose.yml
 testing.bat
+*.sh
