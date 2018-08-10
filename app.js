@@ -10,7 +10,7 @@ const client = new komada.Client({
 
 });
 client.login(process.env.botToken)
-// crons.runCrons()
+crons.runCrons()
 client.on('ready', () => {
   client.user.setActivity('+help', {type: 'PLAYING'})
   console.log('I am ready!');
