@@ -11,7 +11,7 @@ exports.conf = {
     aliases: ["setWow"],
     permLevel: 0,
     botPerms: [],
-    requiredFuncs: [],
+    requiredFuncs: [4],
     requiredModules: [],
 };
 

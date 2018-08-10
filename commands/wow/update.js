@@ -11,7 +11,7 @@ exports.conf = {
     selfbot: false,
     runIn: ["text", "dm", "group"],
     aliases: [],
-    permLevel: 0,
+    permLevel: 4,
     botPerms: [],
     requiredFuncs: [],
     requiredModules: [],

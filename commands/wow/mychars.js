@@ -36,7 +36,7 @@ exports.conf = {
 
 exports.help = {
     name: "mychars",
-    description: "Gets data from your character",
+    description: "Displays your characters",
     usage: "",
     usageDelim: "",
     type: "commands",

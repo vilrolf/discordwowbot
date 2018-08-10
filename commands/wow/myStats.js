@@ -45,7 +45,7 @@ exports.conf = {
 
 exports.help = {
     name: "mystats",
-    description: "Gets data from your character",
+    description: "Displays your stats",
     usage: "",
     usageDelim: "",
     type: "commands",
