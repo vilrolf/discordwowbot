@@ -9,9 +9,9 @@ exports.conf = {
     selfbot: false,
     runIn: ["text", "dm", "group"],
     aliases: ["setWow"],
-    permLevel: 0,
+    permLevel: 4,
     botPerms: [],
-    requiredFuncs: [4],
+    requiredFuncs: [],
     requiredModules: [],
 };
 
