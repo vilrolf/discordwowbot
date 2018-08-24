@@ -2,34 +2,13 @@ var cron = require('node-cron');
 var sheet = require('../sheet')
 var db = require('../db')
 
-const write30Min = () => {
-    cron.schedule('0,30 15-23 * * *', () => {
-        sheet.write()
-    })
-    cron.schedule('0 0-3 * * *', () => {
-        sheet.write()
+const fiveMin = () => {
+    cron.schedule('*/5 * * * *', async () => {
+        const shouldWrite = await db.updateAllCharacters()
+        if (shouldWrite) sheet.write()
     })
 }
-const everHourAtNight = () => {
-    cron.schedule('0 3-14 * * *', () => {
-        sheet.write()
-    } )
-}
-const updateChars = () => {
-    cron.schedule('25,55 * * * *', () => {
-        db.updateAllCharacters()
-    })
-}
-// const everyMinute = () => {
-//     cron.schedule('* * * * *', () => {
-//         console.log('writing')
-//         sheet.write()
-//     } )
-// }
 exports.runCrons = () => {
-    write30Min()
-    everHourAtNight()
-    updateChars()
-    // everyMinute()
+    fiveMin()
 }
 

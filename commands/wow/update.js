@@ -2,8 +2,9 @@ const db = require('../../db.js')
 const wow = require('../../wow.js')
 const charEmbed = require('../../util/charEmbed.js')
 exports.run = async (client, msg) => {
-   db.updateAllCharacters()
-
+  const hasChanges =   await  db.updateAllCharacters()
+    if(!hasChanges) msg.reply('No changes')
+    else msg.reply('Something changed')
 }
 
 exports.conf = {
