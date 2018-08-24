@@ -1,9 +1,11 @@
 const db = require('../../db.js')
 const wow = require('../../wow.js')
+var sheet = require('../../sheet')
 const charEmbed = require('../../util/charEmbed.js')
 exports.run = async (client, msg) => {
-  const hasChanges =   await  db.updateAllCharacters()
-    if(!hasChanges) msg.reply('No changes')
+    const hasChanges = await db.updateAllCharacters()
+    if (hasChanges) sheet.write()
+    if (!hasChanges) msg.reply('No changes')
     else msg.reply('Something changed')
 }
 
