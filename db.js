@@ -40,11 +40,15 @@ exports.updateAllCharacters = async () => {
     let shouldUpdate = false
     const chars = db.get('characters').value()
     for (i in chars) {
-        const old = chars[i]
-        const newChar = await wow.updateCharacter(old)
-        const isChanged = exports.isDifferent(old, newChar)
-        if (!shouldUpdate) shouldUpdate = isChanged
-        db.get('characters').find(old).assign(newChar).write()
+        try {
+            const old = chars[i]
+            const newChar = await wow.updateCharacter(old)
+            const isChanged = exports.isDifferent(old, newChar)
+            if (!shouldUpdate) shouldUpdate = isChanged
+            db.get('characters').find(old).assign(newChar).write()
+        } catch(error) {
+            console.log('user might not exist anymore')
+        }
     }
     return shouldUpdate
 }

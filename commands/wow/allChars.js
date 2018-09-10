@@ -21,7 +21,7 @@ exports.run = async (client, msg) => {
     })
     const table = mTable(outArray)
 
-    msg.reply('Your characters: ' +
+    msg.reply('All characters: ' +
         ' ```' +
         table
         + '``` ')
